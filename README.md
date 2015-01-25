@@ -21,3 +21,7 @@ To properly run the script run_analysis.R, the raw data sets must be located in 
 * UCI HAR Dataset/subject_test.txt
 
 A final tidy.txt file will be created in the working directory once the script has properly executed.
+
+## CodeBook
+
+Please refer to codeBook.MD for detailed information about the raw data set and specific extracted features.
