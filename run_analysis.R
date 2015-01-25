@@ -73,7 +73,7 @@ merged$activityType <- replace(merged$activityType, merged$activityType == 4, "S
 merged$activityType <- replace(merged$activityType, merged$activityType == 5, "STANDING")
 merged$activityType <- replace(merged$activityType, merged$activityType == 6, "LAYING")
 
-## CREATE FINAL TIDY DATA SET WITH THE 
+## CREATE FINAL TIDY DATA SET WITH THE MEAN OF EACH EXTRACTED FEATURE FOR EACH ACTIVITY AND EACH SUBJECT
 
 tidy <- aggregate(merged[, -(1:2)], by=list(subject=merged$participantId, activity=merged$activityType), FUN=mean, na.rm=TRUE)
 write.table(tidy, "tidy.txt", row.name=FALSE)
