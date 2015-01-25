@@ -2,15 +2,17 @@
 
 ##Data Source
 
-This tidy dataset is based on the “Human Activity Recognition Using Smartphones Data Set” which is available in its original form at: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+This tidy dataset is based on the “Human Activity Recognition Using Smartphones Data Set” (UCI HAR Data Set) which is available in its original form at: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 The original project and data set are fully described at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 ## Final Tidy Data Description
 
-The resulting tidy data set provides the mean for all features in the dataset that are the  mean or standard deviation for each measurement for each activity and each subject. The extracted features are listed below.
+The resulting tidy data set provides the mean for all features in the dataset extracted for each activity and each subject. The specific extracted features are listed below.
 
-## Selection of the Features
+The train and test data sets in the UCI HAR Data Set were merged into one data set before creation of the final tidy data set. The features.txt file in the original UCI HAR Data Set provided the detailed labels for the features in the data set.
+
+## Features Extracted
 
 In the assignment, it was requested that only the measurements on the mean and standard deviation for each measurement be extracted. I extracted the following features from the original data set for all subjects and activity types:
 
